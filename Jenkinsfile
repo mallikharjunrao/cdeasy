@@ -6,6 +6,7 @@ node {
         sh 'env'
         sh 'echo $GIT_COMMIT'
         sh 'sleep 2s'
+        sh 'printenv'
         echo 'Here goes the code linting'
         sh 'sleep 5s'
       },
