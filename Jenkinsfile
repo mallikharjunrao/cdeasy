@@ -1,6 +1,6 @@
 node {
   stage 'Deploy to Integration'
-    git 'git@github.com:camiloribeiro/cdeasy.git'
+    checkout scm
     gitCommit = sh(returnStdout: true, script: 'git rev-parse HEAD').trim()
     shortCommit = sh(returnStdout: true, script: 'git rev-parse HEAD').trim().take(6)
     echo 'Here goes the unit level tests $shortCommit'
