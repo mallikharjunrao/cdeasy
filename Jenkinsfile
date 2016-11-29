@@ -4,9 +4,6 @@ node {
       "Unit Tests and Linting": {
         git 'git@github.com:camiloribeiro/cdeasy.git'
         echo 'Here goes the unit level tests'
-        sh 'env'
-        sh 'echo $GIT_COMMIT'
-        sh 'sleep 2s'
         sh 'printenv'
         echo 'Here goes the code linting'
         sh 'sleep 5s'
