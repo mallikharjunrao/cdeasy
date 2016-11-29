@@ -2,6 +2,7 @@ node {
   stage 'Build'
     parallel (
       "Unit Tests and Linting": {
+        checkout scm
         echo 'Here goes the unit level tests'
         sh 'env'
         sh 'echo $GIT_COMMIT'
