@@ -3,6 +3,7 @@ node {
     parallel (
       "Unit Tests and Linting": {
         echo 'Here goes the unit level tests'
+        sh 'env'
         sh 'sleep 2s'
         echo 'Here goes the code linting'
         sh 'sleep 5s'
