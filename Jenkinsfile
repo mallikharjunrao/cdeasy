@@ -2,7 +2,7 @@ node {
   stage 'Build'
     parallel (
       "Unit Tests and Linting": {
-        git scm
+        git 'git@github.com:camiloribeiro/cdeasy.git'
         echo 'Here goes the unit level tests'
         sh 'env'
         sh 'echo $GIT_COMMIT'
